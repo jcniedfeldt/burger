@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" id="ready2eat">
+                <div class="card-header">
+                    <h1>Ready 2 Eat!</h1>
+                </div>
+                <div class="card-body">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                    {{/unless}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card" id="devoured">
+                <div class="card-header">
+                    <h1>Devoured</h1>
+                </div>
+                <div class="card-body">
+
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Add Burger</h1>
+                </div>
+                <div class="card-body">
+                    <form class="create-form">
+
+                        <div class="form-group">
+                            <label for="newburger">Burger Name:</label>
+                            <input type="text" id="newburger" name="name">
+                        </div>
+
+                        <button type="submit">Add Burger</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
