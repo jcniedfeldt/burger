@@ -1,19 +1,54 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+/* .panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
+  border: none;
+} */
+body{
+  background-image: url("/assets/img/diamondBackground.jpg");
+}
+.accordion,.panel{
+  border:0px;
+}
+.jumbotron-fluid{
+  background-color: #A50400;
+  color:#FFE87B;
 }
 
-.label {
-  font-weight: bold;
+.rounded-top{
+  border-top-left-radius: 5rem!important;
+  border-top-right-radius: 5rem!important;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+.rounded-bottom{
+  border-bottom-left-radius: 5rem!important;
+  border-bottom-right-radius: 5rem!important;
 }
-
-.form-group {
-  margin-bottom: 5px;
+.card-header{
+  text-align: center;
+}
+.btn-link{
+  color:inherit;
+  text-decoration: none;
+}
+.bun{
+  background-color:	#e5cb7a;
+  border:0px!important;
+}
+.patty{
+  
+  background-color:	#450101;
+  border:0px;
+  color:white;
+}
+.relish{
+  background-color: #35D11D;
+  border:0px;
+}
+.tomato{
+  background-color: #FD2923;
+  border:0px;
+}
+.td{
+  text-align: center;
+}
+.thead-light{
+  background-color:#FFE04F;
 }
